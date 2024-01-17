@@ -1,14 +1,18 @@
-function isPalindrome(word) {
+function isPalindrome(string) {
   // Write your algorithm here
+  return string === string.split('').reverse().join('');
+
 }
 
 /* 
   Add your pseudocode here
-*/
+
+  //Compare the string to its reverse and return true if they match, false otherwise
 
 /*
-  Add written explanation of your solution here
-*/
+ Function checks if the string is equal to its reverse. 
+ This is done by splitting the string into an array of characters, reversing the array, and joining the characters back into a string.
+*/ 
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
